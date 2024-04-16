@@ -2,7 +2,7 @@
   <div>
     <nav class="in">
       <div class="container-fluid">
-        
+       
        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -13,7 +13,7 @@
         </div>
       </div>
     </nav>
-  
+ 
     <!-- Contenu de la page -->
     <section class="acceuil banner d-flex justify-content-center align-items-center pt-5 taille">
       <div class="container my-5 py-5">
@@ -21,37 +21,37 @@
    
           <div class="col-md-6 py-5 decalage taille">
            <h1 class="py-3 text_baniere textt">Réservez vos billets en ligne dès maintenant !</h1>
-
+ 
               <span class="auto-typing"></span>
-  
+ 
             <h5 class="italic">Alors, on vous aide ?</h5>
-  
+ 
            <p>
       <!-- Ajoutez un gestionnaire d'événements @click pour rediriger vers la page de connexion -->
         <button @click="redirectToLogin" class="bout py-3 btn btn-lg btn-order">
           <div><strong>Commencez</strong> </div>
         </button>
-            
+           
     </p>
           </div>
-  
+ 
          
         </div>
       </div>
     </section>
-  
+ 
     <!-- Section 4 -->
     <section class="section6">
       <h2>Vous désirez parler avec nous ?</h2>
       <h1 class="xt">Contactez-nous directement via le bouton</h1>
       <router-link to="/contact" class="btn bt r">C'est par ici</router-link>
-
+ 
       <p>Decouvrez les reponses a vos questions dans la <a href="FAQ.html"> FAQ</a></p>
     </section>
-  
+ 
     <!-- Section 5 -->
-    
-  
+   
+ 
     <!-- Section 6 -->
     <section class="section7">
   <footer class="text-center text-lg-start text-white footboost d-flex justify-content-center">
@@ -76,14 +76,14 @@
     </div>
   </footer>
 </section>
-
+ 
   </div>
 </template>
-
+ 
 <script>
 export default {
   name: 'HomePage',
-
+ 
   methods: {
     redirectToLogin() {
       // Redirigez vers la page de connexion en utilisant le routeur
@@ -92,12 +92,12 @@ export default {
   }
 }
 </script>
-
+ 
 <style scoped>
 /* Lien de on vous aide ? */
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-
-
+ 
+ 
 /* Style globale de la page */
 *{
     margin: 0px;
@@ -106,8 +106,8 @@ export default {
     font-family:'poppins', sans-serif;
     /* Effet de defilement quand on clique sur un lien */
     scroll-behavior: smooth;
-
-    
+ 
+   
 }
 .foot{
     height: 100px;
@@ -120,10 +120,10 @@ export default {
     --Noir:#222;
     --primaire: #007bc4;
     --gris:#888;
-
+ 
 }
-
-
+ 
+ 
 .taille{
     height: 10%;
 }
@@ -133,10 +133,9 @@ export default {
     z-index: 99;
     font-weight: 600;
     @media screen {
-        
+       
     }
 }
-
 .navbar{
     height: 70px;
 }
@@ -148,8 +147,8 @@ export default {
 .a{
     color: #fc5e1f;
 }
-
-
+ 
+ 
 /* classe du bouton que j'ai donner*/
 /* bordure des bouton */
 .btn-order{
@@ -173,7 +172,7 @@ export default {
     color: #fff ;
     background-color:rgb(26, 18, 138);
 }
-
+ 
 /* L'effet Hover */
 .navbar-nav .nav-item .nav-link :hover{
   border-bottom: 1px solid ;
@@ -183,9 +182,9 @@ export default {
 .hover{
     opacity: .9;
 }
-
+ 
 /* ------------------------------section 2---------------------------------- */
-
+ 
 /* .acceuil{
     height:48% ;
 } */
@@ -197,7 +196,7 @@ export default {
     background-color: #3737377a;
     background-image: linear-gradient(45deg, #46b1dc, #e67bb1);
 }
-
+ 
 .textt{
     margin-top: -150px;
     margin-left: 30px;
@@ -205,7 +204,7 @@ export default {
 .fleche{
     margin-left: 80px;
 }
-
+ 
 .bout{
     background: linear-gradient(90deg, #35a3cee1, #e67bb1);
     border-radius: none;
@@ -227,17 +226,17 @@ export default {
 .carous{
     height: 100px;
     margin-top: -50px;
-    
+   
     flex-wrap: nowrap;
 }
             /* --------------------------------Section2--------------------------------------- */
-
+ 
 .section2{
     height: 1080px;
     margin-top: 10px;
     /* background: url(./Images/fond\ google.jpg) no-repeat; */
     background-size: cover;
-    
+   
 }
 .nos{
     /* centrer nos services */
@@ -245,7 +244,7 @@ export default {
     font-weight: 400;
     position: relative;
     padding-top: 30px;
-    text-align: center;   
+    text-align: center;  
 }
 .s{
     color: #fc5e1f;
@@ -259,18 +258,18 @@ export default {
 .title h2::after{
     content: '';
     background: linear-gradient(90deg, #35a3cee1, #e67bb1);
-
+ 
     height: 40px;
     width: 60px;
     position:absolute;
     top: 10px;
    
     z-index: -1;
-
+ 
     transform: rotate(-10deg);
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
-
+ 
 }
 .yo img{
     height: 400px;
@@ -294,7 +293,7 @@ export default {
 .loin{
     margin-left: 3px;
 }
-
+ 
 .o{
     border: 1px solid #3737377a;
     background-color: #f4f4f78a;
@@ -303,9 +302,9 @@ export default {
 /* 2  petites images a coter des titres */
 .card-body img{
     height: 50px;
-    border-radius: 100px;   
+    border-radius: 100px;  
 }
-
+ 
 /* ----------------------------section3------------------------------ */
 .section3{
     height: 280px;
@@ -327,12 +326,12 @@ export default {
 .t h4{
     font-size: 30px;
     font-family: 'Sacramento', cursive;
-
+ 
     display: flex;
     justify-content: center;
-    color: #fff;   
+    color: #fff;  
 }
-
+ 
 /* Ligne entre les sections */
 .bordure2{
     border: 1px solid #fff;
@@ -372,7 +371,7 @@ export default {
     background-color: #fd7d14cc;
     color: #fff;
 }
-
+ 
 /* --------------------------------Section 4------------------------------ */
 .section4{
     height: 700px;
@@ -399,14 +398,14 @@ export default {
 }
 .card{
     border: none;
-    
+   
 }
 .alignimg{
     display: flex;
     margin: 100px;
     justify-content: space-between;
     margin-top: -1px;
-    border: none;   
+    border: none;  
 }
 .even{
     display: flex;
@@ -421,8 +420,8 @@ export default {
     font-size: 20px;
     margin-left: -15px;
 }
-
-
+ 
+ 
 /* ------------------------ section6--------------------------- */
 .section6{
     height: 200px;
@@ -432,31 +431,31 @@ export default {
     opacity: .9;
 }
 .bt{
-    margin-left: 900px;   
+    margin-left: 900px;  
     margin-top: -100px;
 }
 .xt{
     color: #fc5e1f;
 }
-
+ 
 /* ---------------------------------section7 Fotter---------------------- */
 .section7{
     margin-top: -10px;
     height: 150px;
     width: auto;
     background-color: #222;
-
+ 
 }
 .yt{
     font-size: 18px;
 }
-
+ 
 .copyright a{
  text-decoration: none;
 }
 .copyright{
     text-align: center;
-    
+   
 }
 /* Logo*/
 .iconess{
@@ -471,7 +470,7 @@ export default {
     border-radius: 1000px;
     color: #fff;
 }
-
+ 
 .lien a{
     text-decoration: none;
     color: #fff;
@@ -479,28 +478,29 @@ export default {
     font-size: 18px;
     margin-left: 20px;
     line-height: 40px;
-
+ 
 }
-
+ 
 .contc{
     color: #fff;
     opacity: .5;
     font-size: 18px;
-    
+   
     line-height: 40px;
 }
 .esp{
     margin-left: 10px;
 }
-
-
+ 
+ 
 .footboost{
-    
+   
    
     background-color: #222;
 }
-
+ 
 .card-title{
     font-weight: bold;
 }
 </style>
+ 
